@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script src="original.js" async defer></script>
+        <h3>Instructions</h3>
+        <p>
+            This calculator can combine any two numbers using
+            an operator. <br> Once the result has been displayed,
+            press 'AC' to reset.
+        </p>
+        <!-- Results Field -->
+        <input id="sum" type="text">
+        <br>
+        <!-- Row One -->
+        <input type="button" value="1" id="one" onclick="getNum(this.value)"></input>
+        <input type="button" value="2" id="two" onclick="getNum(this.value)"></input>
+        <input type="button" value="3" id="three" onclick="getNum(this.value)"></input>
+        <input type="button" value="/" id="divide" onclick="getOperator(this.value)"></input>
+        <br>
+        <!-- Row Two -->
+        <input type="button" value="4" id="four" onclick="getNum(this.value)"></input>
+        <input type="button" value="5" id="five" onclick="getNum(this.value)"></input>
+        <input type="button" value="6" id="six" onclick="getNum(this.value)"></input>
+        <input type="button" value="*" id="multiply" onclick="getOperator(this.value)"></input>
+        <br>
+        <!-- Row Three -->
+        <input type="button" value="7" id="seven" onclick="getNum(this.value)"></input>
+        <input type="button" value="8" id="eight" onclick="getNum(this.value)"></input>
+        <input type="button" value="9" id="nine" onclick="getNum(this.value)"></input>
+        <input type="button" value="-" id="subtract" onclick="getOperator(this.value)"></input>
+        <br>
+        <!-- Row Four -->
+        <input type="button" value="." id="decimal" onclick="getNum(this.value)"></input>
+        <input type="button" value="0" id="zero" onclick="getNum(this.value)"></input>
+        <input type="button" value="C" id="clear" onclick="clear()"></input>
+        <input type="button" value="+" id="add" onclick="getOperator(this.value)"></input>
+        <br>
+        <!-- Row Five -->
+        <button id="equals" style="width: 80px" onclick="calculate()">=</button>
+        <button id="clear-all" onclick="location.reload()">AC</button>
+    </body>
+</html>

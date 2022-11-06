@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js" async defer></script>
+        <h1 class="header">Calculator</h1>
+        <h4 class="header">by H. J. MacLeary</h4>
+        <div id="calculator">
+            <!-- Row One -->
+            <div> <!-- Input Field -->
+                <input id="sum" type="text">
+            </div>
+            <!-- Row Two -->
+            <div class="row">
+                <div> <!-- Open Parentheses -->
+                    <input type="button"  value="(" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Closed Parentheses -->
+                    <input type="button"  value=")" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- All Clear -->
+                    <button onclick="location.reload()">AC</button>
+                </div>
+            </div>
+            <!-- Row Three -->
+            <div class="row">
+                <div> <!-- One -->
+                    <input type="button"  value="1" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Two -->
+                    <input type="button"  value="2" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Three -->
+                    <input type="button"  value="3" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Divide -->
+                    <input type="button"  value="/" onclick="getSum(this.value)"></input>
+                </div>
+            </div>
+            <!-- Row Four -->
+            <div class="row">
+                <div> <!-- Four -->
+                    <input type="button"  value="4" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Five -->
+                    <input type="button"  value="5" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Six -->
+                    <input type="button"  value="6" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Multiply -->
+                    <input type="button"  value="*" onclick="getSum(this.value)"></input>
+                </div>
+            </div>
+            <!-- Row Five -->
+            <div class="row">
+                <div> <!-- Seven -->
+                    <input type="button"  value="7" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Eight -->
+                    <input type="button"  value="8" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Nine -->
+                    <input type="button"  value="9" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Subtract -->
+                    <input type="button"  value="-" onclick="getSum(this.value)"></input>
+                </div>
+            </div>
+            <!-- Row Six -->
+            <div class="row">
+                <div> <!-- Decimal -->
+                    <input type="button"  value="." onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Zero -->
+                    <input type="button"  value="0" onclick="getSum(this.value)"></input>
+                </div>
+                <div> <!-- Clear -->
+                    <input type="button"  value="C" onclick="backspace()"></input>
+                </div>
+                <div> <!-- Add -->
+                    <input type="button"  value="+" onclick="getSum(this.value)"></input>
+                </div>
+            </div>
+            <!-- Row Seven -->
+            <div class="row">
+                <div> <!-- Equals -->
+                    <button id="equals"  onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
