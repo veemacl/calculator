@@ -15,7 +15,7 @@ function calculate() // Calculates sum
         let sumstr = sum.join(''); // Turns [5,5,+,2] into "55+2"
         let result = Function("return " + sumstr)(); // result variable which = function that returns 55+2
         document.getElementById("sum").value = result; // Updates text box with result
-        sum = Array.from(String(result), Number); // Updates sum with result for further calculations
+        sum = Array.from(String(result), String); // Updates sum with result for further calculations
     }
 }
 
