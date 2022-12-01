@@ -1,5 +1,5 @@
 # Calculator
+A functional calculator to perform basic, non-scientific arithmetic.
 
-by Harvey J. MacLeary
-
-This is a version of the Codespace calculator project using only my own work.
+# About
+This is a personal continuation of Jorge Correia's calculator project we were set in the Codespace Bootcamp. I wanted to be able to demonstrate my own ability with CSS and HTML as opposed to just the JavaScript.
